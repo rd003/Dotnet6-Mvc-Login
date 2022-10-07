@@ -1,0 +1,86 @@
+﻿@model Dotnet6MvcLogin.Models.DTO.LoginModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>login</title>
+        
+<style>
+
+form {
+  border: 3px solid #f1f1f1;
+  width:60%;
+  margin:auto;
+  margin-top:10%;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #aa048b;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.msg{
+  padding: 0px;
+}
+
+
+.err{
+    color:red;
+}
+</style>
+ 
+</head>
+<body>
+	
+<form asp-action="Login" method="post">
+  
+  <div class="container">
+    <label asp-for="Username"><b>Username</b></label>
+    <input type="text" asp-for="Username" placeholder="Enter Username">
+            <div class="msg">
+            <span class="err" asp-validation-for="Username"></span>
+            </div>
+
+            
+
+    <label asp-for="Password"><b>Password</b></label>
+   <input  type="password" asp-for="Password" placeholder="Enter Password">
+            <div class="msg">
+            <span asp-validation-for="Password" class="err"></span>
+            </div>
+
+
+    @if(TempData["msg"]!=null){
+                <div class="msg">@TempData["msg"]</div>
+    }
+
+    <button type="submit">Login</button>
+    <a class="text-alert" href="/UserAuthentication/Registration">Not a user? Signup</a>
+  </div>
+</form>
+
+</body>
+</html>

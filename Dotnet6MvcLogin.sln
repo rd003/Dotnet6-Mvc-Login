@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dotnet6MvcLogin", "Dotnet6MvcLogin\Dotnet6MvcLogin.csproj", "{A7E0D612-EFB4-4ABC-B5CF-07C0D1B0C6FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7E0D612-EFB4-4ABC-B5CF-07C0D1B0C6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E0D612-EFB4-4ABC-B5CF-07C0D1B0C6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E0D612-EFB4-4ABC-B5CF-07C0D1B0C6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E0D612-EFB4-4ABC-B5CF-07C0D1B0C6FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63D62FFD-3487-47B1-9F83-04A6177ED06B}
+	EndGlobalSection
+EndGlobal
