@@ -20,7 +20,6 @@ builder.Services.AddControllersWithViews();
 
 //add services to container
 builder.Services.AddScoped<IUserAuthenticationService, UserAuthenticationService>();
-builder.Services.AddScoped<IBaseRepository<Genre>, BaseRepository<Genre>>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
